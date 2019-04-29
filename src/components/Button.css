@@ -1,0 +1,40 @@
+/*Usando variáveis em CSS*/
+:root {
+  --bg-button: #f0f0f0;
+  --border-button: solid 1px #888;
+}
+
+.button {
+  font-size: 1.4em;
+  background-color: var(--bg-button);
+  border: none;
+  border-right: var(--border-button);
+  border-bottom: var(--border-button);
+  outline: none;
+}
+
+/* Quando botão for clicado */
+.button:active {
+  background-color: #ccc;
+}
+
+/* Botão ocupando 2 posições */
+.button.double {
+  grid-column: span 2;
+}
+
+/* Botão ocupando 3 posições */
+.button.triple {
+  grid-column: span 3;
+}
+
+/* Modificando o background quando botão for de operação */
+.button.operation {
+  background-color: #fa8231;
+  color: #fff;
+}
+
+/* Quando botão for clicado */
+.button.operation:active {
+  background-color: #fa8231cc;
+}
